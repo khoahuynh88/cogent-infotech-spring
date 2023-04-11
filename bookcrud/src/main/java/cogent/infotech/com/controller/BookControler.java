@@ -24,16 +24,19 @@ public class BookControler {
 	@Autowired
 	BookService sv;
 	
+	//Add book
 	@PostMapping("/book")
 	public Book add (@RequestBody Book book) {
 		return sv.save(book);
 	}
 	
+	//List all book
 	@GetMapping("/book")
 	public List<Book> listAll(){
 		return sv.listall();
 	}
 	
+	//List one book by id
 	@GetMapping("/book/{bookId}")
 	public Book get(@PathVariable("bookId") Integer id) {
 		Optional<Book> b = sv.find(id);
