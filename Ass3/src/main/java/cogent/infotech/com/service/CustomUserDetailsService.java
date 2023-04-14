@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import cogent.infotech.com.entity.User;
-import cogent.infotech.com.respository.UserRepository;
+
 
 import java.util.ArrayList;
 
